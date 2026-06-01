@@ -1,169 +1,224 @@
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
 body{
-  background:#d8ebe6;
-  color:#1f3557;
+background:#d8ebe6;
+color:#1f3557;
 }
-
 
 /* HOME */
 
 .home{
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:20px;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
 .logo{
-  width:220px;
-  height:220px;
-  object-fit:cover;
-  border-radius:50%;
-  margin-bottom:20px;
-  box-shadow:0 4px 20px rgba(0,0,0,0.2);
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:20px;
+box-shadow:0 4px 20px rgba(0,0,0,0.2);
 }
 
 .home h1{
-  font-size:55px;
-  margin-bottom:10px;
+font-size:55px;
+margin-bottom:10px;
 }
 
 .home p{
-  font-size:22px;
-  margin-bottom:30px;
+font-size:22px;
+margin-bottom:30px;
 }
 
 .home button{
-  padding:15px 35px;
-  border:none;
-  border-radius:40px;
-  background:#1f3557;
-  color:white;
-  font-size:18px;
-  cursor:pointer;
-  transition:0.3s;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+background:#1f3557;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:0.3s;
 }
 
 .home button:hover{
-  transform:scale(1.05);
+transform:scale(1.05);
 }
-
 
 /* FORM */
 
 .form-section{
-  padding:80px 20px;
-  background:white;
+padding:80px 20px;
+background:white;
 }
 
 .form-section h2{
-  text-align:center;
-  font-size:40px;
-  margin-bottom:40px;
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
 }
 
 form{
-  max-width:600px;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:20px;
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
 }
 
 input,
 select,
 textarea{
-  padding:15px;
-  border:none;
-  border-radius:12px;
-  background:#eef5f3;
-  font-size:16px;
+padding:15px;
+border:none;
+border-radius:12px;
+background:#eef5f3;
+font-size:16px;
 }
 
 form button{
-  padding:15px;
-  border:none;
-  border-radius:12px;
-  background:#1f3557;
-  color:white;
-  font-size:18px;
-  cursor:pointer;
+padding:15px;
+border:none;
+border-radius:12px;
+background:#1f3557;
+color:white;
+font-size:18px;
+cursor:pointer;
 }
-
 
 /* ABOUT */
 
 .about{
-  padding:80px 20px;
-  text-align:center;
+padding:80px 20px;
+text-align:center;
 }
 
 .about h2{
-  font-size:40px;
-  margin-bottom:20px;
+font-size:40px;
+margin-bottom:20px;
 }
 
 .about p{
-  max-width:700px;
-  margin:auto;
-  line-height:1.8;
-  font-size:18px;
+max-width:700px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
 }
 
+/* PRODUCTS */
+
+.products{
+padding:80px 20px;
+background:white;
+text-align:center;
+}
+
+.products h2{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.product-card{
+background:#eef5f3;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.product-card:hover{
+transform:translateY(-5px);
+}
+
+.product-card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.product-card h3{
+padding:15px 10px 5px;
+font-size:22px;
+}
+
+.product-card p{
+padding-bottom:15px;
+font-size:18px;
+font-weight:bold;
+color:#1f3557;
+}
 
 /* CONTACT */
 
 .contact{
-  padding:80px 20px;
-  background:white;
-  text-align:center;
+padding:80px 20px;
+background:white;
+text-align:center;
 }
 
 .contact h2{
-  font-size:40px;
-  margin-bottom:20px;
+font-size:40px;
+margin-bottom:20px;
 }
 
 .contact p{
-  margin:10px 0;
-  font-size:18px;
+margin:10px 0;
+font-size:18px;
 }
-
 
 /* FOOTER */
 
 footer{
-  background:#1f3557;
-  color:white;
-  text-align:center;
-  padding:20px;
+background:#1f3557;
+color:white;
+text-align:center;
+padding:20px;
 }
-
 
 /* MOBILE */
 
 @media(max-width:768px){
 
-  .home h1{
-    font-size:40px;
-  }
+.home h1{
+font-size:40px;
+}
 
-  .home p{
-    font-size:18px;
-  }
+.home p{
+font-size:18px;
+}
 
-  .logo{
-    width:180px;
-    height:180px;
-  }
+.logo{
+width:180px;
+height:180px;
+}
 
+.products h2,
+.about h2,
+.contact h2,
+.form-section h2{
+font-size:32px;
+}
+
+.product-card img{
+height:220px;
+}
 }
